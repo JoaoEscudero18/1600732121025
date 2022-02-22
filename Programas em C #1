@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    printf("Hello World,\n");
+    
+    printf("Este eh o numero dois: %d \n", 2);
+    printf("Aluno: %s \t \nNota: %f ","Pedro", 7.5);
+    
+    return 0;
+}
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#define e_numero 10
+
+int main()
+{
+    printf ("Numero decimal: %d\t", e_numero);
+    return 0;
+}
