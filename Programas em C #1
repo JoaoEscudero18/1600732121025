@@ -22,3 +22,19 @@ int main()
     printf ("Numero decimal: %d\t", e_numero);
     return 0;
 }
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+    int e_numero;
+    e_numero = 20;
+    printf("Numero decimal: %d\t", e_numero); // mostra o valor 20 em decimal
+    printf("Numero octal: %o\t", e_numero); // mostra o valor 20 em octal
+    printf("Numero hexadecimal: %x\n", e_numero); // mostra o valor em hexadecimal
+}
