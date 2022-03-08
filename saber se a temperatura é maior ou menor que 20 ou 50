@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main () {
+    int e_nro;
+    printf("Entre com o nro:");
+    scanf("%i",& e_nro);
+    if(e_nro<20){
+        printf("O numero é menor que 20");
+    }
+    else{
+        if((e_nro)>50){
+            printf("O numero é maior que 50");
+        }
+        else{
+           printf("O numero é menor que 50"); 
+        }
+    }
+    return 0;
+}
