@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    float e_numero1, e_numero2;
+    printf("Entre com o Primeiro valor:");
+    scanf("%f",& e_numero1);
+    printf("Entre com o Segundo valor:");
+    scanf("%f",& e_numero2);
+    
+    if((e_numero1 > e_numero2)){
+            printf("O Número maior é:");
+            printf("%f", e_numero1);
+    }
+     else{
+            printf("Número maior é:" "%f"  ,e_numero2);
+        }
+}
