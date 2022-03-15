@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main()
+{
+    float e_numero1, e_numero2, e_numero3;
+    printf("Entre com o Primeiro valor:");
+    scanf("%f",& e_numero1);
+    printf("Entre com o Segundo valor:");
+    scanf("%f",& e_numero2);
+    printf("Entre com o Terceiro valor:");
+    scanf("%f",& e_numero3);
+    
+    if ( (e_numero1 > e_numero2) && (e_numero2 > e_numero3)) {
+            printf("A sequência correta é:");
+            printf("%f %f %f", e_numero3, e_numero2, e_numero1);
+    }
+    else if((e_numero1 > e_numero3)&&(e_numero3 > e_numero2)){
+            printf("A sequência correta é:");
+            printf("%f %f %f", e_numero2, e_numero3, e_numero1);
+    }
+    else if((e_numero2 > e_numero3)&&(e_numero3 > e_numero1)){
+        printf("A sequência correta é:");
+        printf("%f %f %f", e_numero1, e_numero3, e_numero2);
+    }
+    else if((e_numero2 > e_numero1)&&(e_numero1 > e_numero3)){
+        printf("A sequência correta é:");
+        printf("%f %f %f", e_numero3, e_numero1, e_numero2);
+    }
+    else if((e_numero3 > e_numero1)&(e_numero1 > e_numero2)){
+        printf("A sequência correta é:");
+        printf("%f %f %f", e_numero2, e_numero1, e_numero3);
+    }
+    else if((e_numero3 > e_numero2)&&(e_numero2 > e_numero1)){
+        printf("A sequência correta é:");
+        printf("%f %f %f", e_numero1, e_numero2, e_numero3);
+    }
+}
