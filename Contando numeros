@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+    int numero;
+    int valor_aux;
+    printf("Entre com um valor: ");
+    scanf("%d", &numero);
+    valor_aux = 0;
+    while( valor_aux <= numero){
+        printf("%d\n",valor_aux);
+        valor_aux ++;
+    }
+    return 0;
+}
