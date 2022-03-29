@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    float e_teste;
+
+    
+    while (1){
+        
+        scanf("%f",& e_teste);
+        
+        if (e_teste == 1){
+            
+            printf("LIGADA");
+            
+        }
+        else if (e_teste != 1){
+            
+            printf("DESLIGADA");
+            
+        }
+    }
+    return 0;
+}
