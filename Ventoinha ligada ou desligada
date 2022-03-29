@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    float e_temperatura;
+
+    
+    while (1){
+        
+        scanf("%f",& e_temperatura);
+        
+        if (e_temperatura >= 80){
+            
+            printf("LIGADA");
+            
+        }
+        else if (e_temperatura < 50){
+            
+            printf("DESLIGADA");
+            
+        }
+    }
+    return 0;
+}
