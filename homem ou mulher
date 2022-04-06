@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+    float homem, mulher, sexo, peso;
+    
+    printf("Digite 1 para homem e 0 para mulher");
+    printf("Coloque o sexo da pessoa:");
+    scanf("%f", & sexo);
+    
+    printf("Coloque o peso da pessoa:");
+    scanf("%f", & peso);
+    
+    while(""){
+        if(sexo = 0 or 1){
+            if(sexo = 1){
+                printf("Homem");
+            }
+            else{
+                printf("Mulher");
+            }
+        }
+        else{
+            printf("Digite 1 para homem e 0 para mulher");
+            printf("Coloque o sexo da pessoa:");
+            scanf("%f", & sexo);
+        }
+    }
+    return 0;
+}
