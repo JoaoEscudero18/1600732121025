@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+int main()
+{
+    float numero1, numero2, numero3;
+    
+    printf("Coloque o primeiro numero:");
+    scanf("%f", & numero1);
+    printf("Coloque o primeiro numero:");
+    scanf("%f", & numero2);
+    printf("Coloque o primeiro numero:");
+    scanf("%f", & numero3);
+    
+    if (numero1>numero2){
+         if(numero2>numero3){
+             printf(" %f", numero3);
+             printf(" %f", numero2);
+             printf(" %f", numero1);
+         }
+         else{
+             if(numero1>numero3){
+                 printf(" %f", numero2);
+                 printf(" %f", numero3);
+                 printf(" %f", numero1);
+             }
+             else{
+                 printf(" %f", numero2);
+                 printf(" %f", numero1);
+                 printf(" %f", numero3);
+             }
+         }
+    }
+    else{
+        if(numero1>numero3){
+            printf(" %f", numero3);
+            printf(" %f", numero1);
+            printf(" %f", numero2);
+        }
+        else{
+            if(numero2>numero3){
+                printf(" %f", numero1);
+                printf(" %f", numero3);
+                printf(" %f", numero2);
+            }
+            else{
+                printf(" %f", numero1);
+                printf(" %f", numero2);
+                printf(" %f", numero3);
+            }
+        }
+    }
+    
+    return 0;
+}
