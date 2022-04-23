@@ -1,0 +1,43 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+int main()
+{
+    
+    int marcha_T, velocidade, liga_desliga;
+    
+    /* Temos que digitar 1 inicialmente para ligar e 0 (ou qualquer outro número) para desligar.(Aqui devemos colocar um botão de liga e desliga) */
+    
+    scanf("%d",& liga_desliga);
+    
+    if(liga_desliga == 1){
+        while(1){
+        printf("Bem vindo ao seu câmbio automático \n");
+        
+        /* Aqui digitamos nossa velocidade. (vamos ler com um sensor de velocidade futuramente) */
+        
+        printf("Digite sua velocidade: ");
+        scanf("%d", & velocidade);
+        printf("Sua velocidade é %d \n", velocidade);
+        
+        /* Aqui verifivamos qual o estado da nossa chave de liga e desliga para saber se devemos continuar o programa ou para-lo (talvez seja desnecessário) */
+       
+        printf("Qual é a posição da chave ligado e desligado? ");
+        scanf("%d",& liga_desliga);
+        if(liga_desliga == 0){
+            printf("Desligandooooooo");
+            return 0;
+        }
+        else{
+            printf("------------------------------------------------\n");
+        }
+    }
+    }
+    
+    /* Aqui no caso é o else do if que diz que se nos digitarmos qualquer outro numero diferente de 1 o programa vai desligar */
+    
+    else{
+       printf("Desligandooooooo");
+    }
+    return 0;
+}
