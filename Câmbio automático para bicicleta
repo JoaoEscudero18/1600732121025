@@ -4,7 +4,9 @@
 int main()
 {
     
-    int marcha_T, velocidade, liga_desliga;
+    int marcha_T, liga_desliga;
+    float velocidade;
+    
     
     /* Temos que digitar 1 inicialmente para ligar e 0 (ou qualquer outro número) para desligar.(Aqui devemos colocar um botão de liga e desliga) */
     
@@ -17,15 +19,35 @@ int main()
         /* Aqui digitamos nossa velocidade. (vamos ler com um sensor de velocidade futuramente) */
         
         printf("Digite sua velocidade: ");
-        scanf("%d", & velocidade);
-        printf("Sua velocidade é %d \n", velocidade);
+        scanf("%f", & velocidade);
+        printf("Sua velocidade é %f \n", velocidade);
+        
+        /* Lendo a velocidade para definir a marcha da bicicleta */
+        
+        if((velocidade >= 0)&&(velocidade <= 10 )){
+            printf("Marcha: 1\n");
+        }
+        if((velocidade > 10)&&(velocidade <= 20 )){
+            printf("Marcha: 2\n");
+        }
+        if((velocidade > 20)&&(velocidade <= 30 )){
+            printf("Marcha: 3\n");
+        }
+        if((velocidade > 30)&&(velocidade <= 40 )){
+            printf("Marcha: 4\n");
+        }
+        if((velocidade > 40)&&(velocidade <= 50 )){
+            printf("Marcha: 5\n");
+        }
         
         /* Aqui verifivamos qual o estado da nossa chave de liga e desliga para saber se devemos continuar o programa ou para-lo (talvez seja desnecessário) */
        
         printf("Qual é a posição da chave ligado e desligado? ");
         scanf("%d",& liga_desliga);
         if(liga_desliga == 0){
-            printf("Desligandooooooo");
+            printf("------------------------------------------------\n");
+            printf("               Desligandooooooo\n");
+            printf("------------------------------------------------\n");
             return 0;
         }
         else{
@@ -37,7 +59,9 @@ int main()
     /* Aqui no caso é o else do if que diz que se nos digitarmos qualquer outro numero diferente de 1 o programa vai desligar */
     
     else{
-       printf("Desligandooooooo");
+        printf("------------------------------------------------\n");
+        printf("               Desligandooooooo\n");
+        printf("------------------------------------------------\n");
     }
     return 0;
 }
