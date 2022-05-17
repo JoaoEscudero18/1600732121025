@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main () 
+{
+    float nmr1,nmr2,nmr3;
+    printf("Entre com o primeiro numero:");
+    scanf("%f",& nmr1);
+    printf("Entre com o segundo numero:");
+    scanf("%f",& nmr2);
+    printf("Entre com o terceiro numero:");
+    scanf("%f",& nmr3);
+    
+    if((nmr1<nmr2) && (nmr2<nmr3)){
+        printf("%f %f %f ", nmr1, nmr2, nmr3 );
+    }
+     if((nmr1<nmr3) && (nmr3<nmr2)){
+        printf("%f %f %f ", nmr1, nmr3, nmr2 );
+    }
+     if((nmr2<nmr1) && (nmr1<nmr3)){
+        printf("%f %f %f ", nmr2, nmr1, nmr3 );
+    }
+     if((nmr3<nmr1) && (nmr1<nmr2)){
+        printf("%f %f %f ", nmr3, nmr1, nmr2 );
+    }
+     if((nmr2<nmr3) && (nmr3<nmr1)){
+        printf("%f %f %f ", nmr2, nmr3, nmr1 );
+    }
+     if((nmr3<nmr2) && (nmr2<nmr1)){
+        printf("%f %f %f ", nmr3, nmr2, nmr1 );
+    }
+
+    return 0;
+}
